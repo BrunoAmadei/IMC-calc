@@ -8,9 +8,9 @@ function Peso(p, setP) {
                 <input
                     type={'text'}
                     value={''}
-                    onChange={(e) => setP(e.target.value)}>
-                    
-                </input>
+                    onChange={(e) => setP(e.target.value)}
+                    placeholder = {'Digite seu peso'}    
+                />
             </label>
         </div>
     )
