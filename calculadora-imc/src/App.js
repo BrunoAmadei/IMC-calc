@@ -2,20 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Tabela from './components/Tabela';
 import Peso from './components/Peso';
-
-
-
-const altura = (a, setA) => {
-  return (
-    <div>
-      <label>
-        Peso
-        <input type={'text'} value={a} onChange={(e) => setA(e.target.value)}></input>
-      </label>
-    </div>
-  )
-}
-
+import Altura from './components/Altura';
 
 function App() {
   const [peso, setPeso] = useState = ('0')
@@ -24,6 +11,7 @@ function App() {
   return (
     <div>
       <Peso/>
+      <Altura/>
       <Tabela />
     </div>
   );
