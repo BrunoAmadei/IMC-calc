@@ -1,7 +1,7 @@
 import React from "react"
 
 
-function Peso(props) {
+export default function Peso(props) {
     return (
         <div>
             <label>
@@ -16,4 +16,3 @@ function Peso(props) {
     )
 }
 
-export default Peso;

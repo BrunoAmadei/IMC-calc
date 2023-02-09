@@ -1,11 +1,10 @@
 import React from "react";
 
-function Resultado(props) { 
+export default function Resultado(props) { 
     return(
         <div>
-            <p>Resultado: {props.r.toFixed(2)}</p>
+            <p>Resultado: {props.r}</p>
         </div>
     )
 } 
 
-export default Resultado;

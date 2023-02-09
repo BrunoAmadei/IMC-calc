@@ -1,6 +1,6 @@
 import React from "react";
 
-function Tabela() {
+export default function Tabela() {
     return (
         <table>
             <thead>
@@ -43,4 +43,3 @@ function Tabela() {
     )
 }
 
-export default Tabela;

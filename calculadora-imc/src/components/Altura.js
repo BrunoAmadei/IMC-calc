@@ -1,7 +1,7 @@
 import React from "react"
 
 
-function Altura(props) {
+export default function Altura(props) {
     return (
         <div>
             <label>
@@ -16,4 +16,3 @@ function Altura(props) {
     )
 }
 
-export default Altura;
