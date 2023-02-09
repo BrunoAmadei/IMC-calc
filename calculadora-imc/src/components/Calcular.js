@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 
-function Calcular(peso, altura, res) {
+function Calcular(props) {
     const calc = () => {
-        res(peso / (altura * altura))
+       props.res(props.peso / (props.altura * props.altura))
     }
 
     return(
@@ -11,3 +11,5 @@ function Calcular(peso, altura, res) {
         </div>
     )
 }
+
+export default Calcular;

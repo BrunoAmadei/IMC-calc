@@ -1,14 +1,14 @@
-import React, { useState } from "react"
+import React from "react"
 
 
-function Altura(a, setA) {
+function Altura(props) {
     return (
         <div>
             <label>
                 <input
                     type={'text'}
-                    value={''}
-                    onChange={(e) => setA(e.target.value)}
+                    value={props.a}
+                    onChange={(e) => props.setA(e.target.value)}
                     placeholder={'Digite sua altura'}
                 />
             </label>

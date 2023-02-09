@@ -1,15 +1,15 @@
-import React, { useState } from "react"
+import React from "react"
 
 
-function Peso(p, setP) {
+function Peso(props) {
     return (
         <div>
             <label>
                 <input
                     type={'text'}
-                    value={''}
-                    onChange={(e) => setP(e.target.value)}
-                    placeholder = {'Digite seu peso'}    
+                    value={props.p}
+                    onChange={(e) => props.setP(e.target.value)}
+                    placeholder = {'Digit e seu peso'}    
                 />
             </label>
         </div>

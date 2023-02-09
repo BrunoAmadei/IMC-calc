@@ -1,9 +1,9 @@
 import React from "react";
 
-function Resultado(r) { 
+function Resultado(props) { 
     return(
         <div>
-            <p>Resultado: {r.toFixed(2)}</p>
+            <p>Resultado: {props.r.toFixed(2)}</p>
         </div>
     )
 } 
