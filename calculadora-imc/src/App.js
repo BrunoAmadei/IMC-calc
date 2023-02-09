@@ -3,6 +3,7 @@ import './App.css';
 import Tabela from './components/Tabela';
 import Peso from './components/Peso';
 import Altura from './components/Altura';
+import Resultado from './components/Resultado';
 
 function App() {
   const [peso, setPeso] = useState = ('0')
@@ -12,6 +13,7 @@ function App() {
     <div>
       <Peso/>
       <Altura/>
+      <Resultado/>
       <Tabela />
     </div>
   );
