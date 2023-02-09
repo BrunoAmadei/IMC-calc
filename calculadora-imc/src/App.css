@@ -4,10 +4,32 @@
     box-sizing: border-box;
 }
 
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 table,
 th,
 td {
     border: 1px solid #444;
     border-collapse: collapse;
     padding: 15px 10px;
+}
+
+.peso, 
+.altura{
+    padding: 10px;
+}
+
+.peso, label,
+.altura label{
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+}
+
+.altura{
+    margin-top: 15px;
 }

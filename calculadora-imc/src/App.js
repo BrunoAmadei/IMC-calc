@@ -12,11 +12,11 @@ export default function App() {
   const [resultado, setResultado] = useState(0)
 
   return (
-    <div>
-      <Peso />
-      <Altura />
-      <Calcular />
-      <Resultado />
+    <div className='caixa'>
+      <Peso p={peso} setP={setPeso} />
+      <Altura a={altura} setA={setAltura}/>
+      <Calcular peso={peso} altura={altura} res={setResultado} />
+      <Resultado r={resultado} />
       <Tabela />
     </div>
   );
