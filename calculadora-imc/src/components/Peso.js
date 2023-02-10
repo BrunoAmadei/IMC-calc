@@ -10,7 +10,7 @@ export default function Peso(props) {
                     type={'text'}
                     value={props.p}
                     onChange={(e) => props.setP(e.target.value)}
-                    placeholder = {'Digite e seu peso'}    
+                    placeholder={'Digite e seu peso'}
                 />
             </label>
         </div>
