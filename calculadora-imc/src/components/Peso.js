@@ -13,7 +13,7 @@ export default class Peso extends React.Component {
                         type={'text'}
                         value={this.props.p}
                         onChange={(e) => this.props.setP(e.target.value)}
-                        placeholder={'Digite e seu peso'}
+                        placeholder={'e.x: 75'}
                     />
                 </label>
             </div>

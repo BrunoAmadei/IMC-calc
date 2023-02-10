@@ -15,6 +15,7 @@ export default class Altura extends React.Component {
                         type={'text'}
                         value={this.props.a}
                         onChange={(e) => this.props.setA(e.target.value)}
+                        placeholder = {'e.x: 1.85'}
                     />
                 </label>
             </div>

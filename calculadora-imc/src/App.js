@@ -7,9 +7,9 @@ import Resultado from './components/Resultado'
 import Tabela from './components/Tabela'
 
 export default function App() {
-  const [peso, setPeso] = useState(0)  
-  const [altura, setAltura] = useState(0) 
-  const [resultado, setResultado] = useState(0)
+  const [peso, setPeso] = useState()  
+  const [altura, setAltura] = useState() 
+  const [resultado, setResultado] = useState()
 
   return (
     <div className='caixa'>
@@ -21,4 +21,3 @@ export default function App() {
     </div>
   );
 }
-  
