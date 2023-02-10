@@ -1,15 +1,23 @@
 import React from "react";
 
-function Calcular(props) {
-    const calc = () => {
-       props.res((props.peso / (props.altura * props.altura)).toFixed(2))
+class Calcular extends React.Component {
+    constructor(props) {
+        super(props)
+        this.calc = this.fcalc.bind(this)
     }
-
-    return(
-        <div className="btn-calc">
-            <button onClick={calc}>Calcular</button>
-        </div>
-    )
+    
+    fcalc() {
+        const res = (this.props.peso / (this.props.altura * this.props.altura))
+        this.props.res(res.toFixed(2))
+    }
+    
+    render(){
+        return (
+            <div className="btn-calc">
+                <button onClick={this.calc}>Calcular</button>
+            </div>
+        )
+    }
+    
 }
-
 export default Calcular;

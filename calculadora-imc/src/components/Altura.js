@@ -1,18 +1,23 @@
 import React from "react"
 
 
-export default function Altura(props) {
-    return (
-        <div className="altura">
-            <label>
-            Digite sua altura:
-                <input
-                    type={'text'}
-                    value={props.a}
-                    onChange={(e) => props.setA(e.target.value)}
-                />
-            </label>
-        </div>
-    )
-}
+export default class Altura extends React.Component {
+    constructor(props) {
+        super(props)
+    }
 
+    render() {
+        return (
+            <div className="altura">
+                <label>
+                    Digite sua altura:
+                    <input
+                        type={'text'}
+                        value={this.props.a}
+                        onChange={(e) => this.props.setA(e.target.value)}
+                    />
+                </label>
+            </div>
+        )
+    }
+}

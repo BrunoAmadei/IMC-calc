@@ -1,13 +1,18 @@
 import React from "react";
 
-export default function Resultado(props) {
 
 
-    return (
-        <div className="resultado">
-            <h2>Resultado:</h2>
-            <p> {props.r}</p>
-        </div>
-    )
+export default class Resultado extends React.Component {
+    constructor(props) {
+        super(props)
+    }
+
+    render() {
+        return (
+            <div className="resultado">
+                <h2>Resultado:</h2>
+                <p> {this.props.r}</p>
+            </div>
+        )
+    }
 }
-
